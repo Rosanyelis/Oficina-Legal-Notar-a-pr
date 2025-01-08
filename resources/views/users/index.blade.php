@@ -25,9 +25,44 @@
                         <th>Usuario</th>
                         <th>Rol</th>
                         <th>Correo</th>
+                        <th>Estatus</th>
                         <th style="width: 10px"></th>
                     </tr>
                 </thead>
+                <tbody>
+                @foreach ($data as $item)
+                    <tr>
+                        <td>{{ $item->name }}</td>
+                        <td>
+                            @foreach ($item->getRoleNames() as $d)
+                            <span class="badge bg-secondary">{{ $d }}</span>
+                            @endforeach
+                        </td>
+                        <td>{{ $item->email }}</td>
+                        <td>
+                            @if ($item->status == 'Activo')
+                            <span class="badge bg-primary">Activo</span>
+                            @endif
+                            @if ($item->status == 'Inactivo')
+                            <span class="badge bg-danger">Inactivo</span>
+                            @endif
+                        </td>
+                        <td>
+                            <a href="{{ route('users.edit', $item->id) }}" class="btn btn-sm btn-icon btn-text-secondary
+                                rounded-pill"
+                                data-bs-toggle="tooltip" title="Editar Usuario">
+                                <i class="ri-edit-2-line ri-20px"></i>
+                            </a>
+                            <a href="javascript:;" class="btn btn-sm btn-icon btn-text-secondary
+                                rounded-pill text-danger"
+                                data-bs-toggle="tooltip" title="Eliminar Usuario"
+                                onclick="deleteRecord({{ $item->id }})">
+                                <i class="ri-delete-bin-7-line ri-20px"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    @endforeach
+                </tbody>
             </table>
         </div>
     </div>

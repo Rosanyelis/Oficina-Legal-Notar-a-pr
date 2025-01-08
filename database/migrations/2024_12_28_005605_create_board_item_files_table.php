@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('board_item_id')->constrained('board_items')->onDelete('cascade')->onUpdate('cascade');
             $table->string('file');
+            $table->string('filename');
             $table->timestamps();
         });
     }

@@ -11,19 +11,6 @@
 
         <ul class="navbar-nav flex-row align-items-center ms-auto">
 
-            <!-- Notification -->
-            <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-4 me-xl-1">
-                <a class="nav-link btn btn-text-secondary rounded-pill btn-icon dropdown-toggle hide-arrow"
-                    href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside"
-                    aria-expanded="false">
-                    <i class="ri-notification-2-line ri-22px"></i>
-                    <span
-                        class="position-absolute top-0 start-50 translate-middle-y badge badge-dot bg-danger mt-2 border"></span>
-                </a>
-
-            </li>
-            <!--/ Notification -->
-
             <!-- User -->
             <li class="nav-item navbar-dropdown dropdown-user dropdown">
                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
@@ -55,14 +42,6 @@
                                     <small class="text-muted">{{ Auth::user()->email }}</small>
                                 </div>
                             </div>
-                        </a>
-                    </li>
-                    <li>
-                        <div class="dropdown-divider"></div>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="{{ route('profile.edit') }}">
-                            <i class="ri-user-3-line ri-22px me-3"></i><span class="align-middle">Mi Perfil</span>
                         </a>
                     </li>
                     <li>

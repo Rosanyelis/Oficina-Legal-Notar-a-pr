@@ -25,7 +25,7 @@ class StoreUser extends FormRequest
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email'],
             'password' => ['required', 'string'],
-            'rol_id' => ['required'],
+            'rol' => ['required', 'string'],
         ];
     }
 
@@ -36,7 +36,7 @@ class StoreUser extends FormRequest
             'email.required' => 'El campo Correo Electrónico es requerido',
             'email.email' => 'El campo Correo Electrónico no es valido',
             'password.required' => 'El campo Contraseña es requerido',
-            'rol_id.required' => 'El campo Rol es requerido',
+            'rol.required' => 'El campo Rol es requerido',
         ];
     }
 }

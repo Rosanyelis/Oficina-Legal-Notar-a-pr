@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('boards', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('kamban_id')->references('id')->on('kambans')->onDelete('cascade');
+            $table->foreignId('work_space_id')->references('id')->on('work_spaces')->onDelete('cascade');
             $table->text('title');
             $table->text('title_slug');
             $table->timestamps();

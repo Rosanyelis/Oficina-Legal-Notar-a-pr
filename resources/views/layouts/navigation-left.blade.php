@@ -3,7 +3,7 @@
                 <a href="{{ route('dashboard') }}" class="app-brand-link">
                     <span class="app-brand-logo demo">
                         <span style="color: var(--bs-primary)">
-                            <img src="{{ asset('assets/img/logo.png') }}" width="120"  alt="" >
+                            <img src="{{ asset('assets/img/logo.png') }}" width="50"  alt="" >
                         </span>
                     </span>
                 </a>
@@ -31,6 +31,30 @@
                     </a>
                 </li>
 
+                <li class="menu-item
+                    @if (Route::currentRouteName() == 'clientes.index' ||
+                        Route::currentRouteName() == 'clientes.create' ||
+                        Route::currentRouteName() == 'clientes.edit')
+                        active
+                    @endif">
+                    <a href="{{ route('clientes.index') }}" class="menu-link">
+                        <i class="menu-icon tf-icons ri-group-2-fill"></i>
+                        <div data-i18n="Clientes">Clientes</div>
+                    </a>
+                </li>
+
+                <li class="menu-item
+                    @if (Route::currentRouteName() == 'gestiones.index' ||
+                        Route::currentRouteName() == 'gestiones.create' ||
+                        Route::currentRouteName() == 'gestiones.edit')
+                        active
+                    @endif">
+                    <a href="{{ route('gestiones.index') }}" class="menu-link">
+                        <i class="menu-icon tf-icons ri-kanban-view"></i>
+                        <div data-i18n="Gestiones Kamban">Gestiones Kamban</div>
+                    </a>
+                </li>
+
 
                 <li class="menu-header mt-5">
                     <span class="menu-header-text" data-i18n="Configuraciones">Configuraciones</span>
@@ -38,11 +62,62 @@
                 <li class="menu-item
                     @if (Route::currentRouteName() == 'users.index' ||
                         Route::currentRouteName() == 'users.create' ||
-                        Route::currentRouteName() == 'users.edit') active @endif"">
-                    <a href="{{ route('users.index') }}" class="menu-link">
-                        <i class="menu-icon tf-icons ri-group-2-line"></i>
-                        <div data-i18n="Usuarios">Usuarios</div>
+                        Route::currentRouteName() == 'users.edit' ||
+                        Route::currentRouteName() == 'juzgado.index' ||
+                        Route::currentRouteName() == 'juzgado.create' ||
+                        Route::currentRouteName() == 'juzgado.edit' ||
+                        Route::currentRouteName() == 'materias.index' ||
+                        Route::currentRouteName() == 'materias.create' ||
+                        Route::currentRouteName() == 'materias.edit' ||
+                        Route::currentRouteName() == 'medios-contacto.index' ||
+                        Route::currentRouteName() == 'medios-contacto.create' ||
+                        Route::currentRouteName() == 'medios-contacto.edit')
+                        active open
+                    @endif">
+                    <a href="javascript:void(0);" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons ri-settings-2-fill"></i>
+                        <div data-i18n="Configuraciones">Configuraciones</div>
                     </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item
+                            @if (Route::currentRouteName() == 'juzgado.index' ||
+                                Route::currentRouteName() == 'juzgado.create' ||
+                                Route::currentRouteName() == 'juzgado.edit')
+                                active
+                            @endif">
+                            <a href="{{ route('juzgado.index') }}" class="menu-link">
+                                <div data-i18n="Juzgados">Juzgados</div>
+                            </a>
+                        </li>
+                        <li class="menu-item
+                            @if (Route::currentRouteName() == 'materias.index' ||
+                                Route::currentRouteName() == 'materias.create' ||
+                                Route::currentRouteName() == 'materias.edit')
+                                active
+                            @endif">
+                            <a href="{{ route('materias.index') }}" class="menu-link">
+                                <div data-i18n="Materias">Materias</div>
+                            </a>
+                        </li>
+                        <li class="menu-item
+                            @if (Route::currentRouteName() == 'medios-contacto.index' ||
+                                Route::currentRouteName() == 'medios-contacto.create' ||
+                                Route::currentRouteName() == 'medios-contacto.edit')
+                                active
+                            @endif">
+                            <a href="{{ route('medios-contacto.index') }}" class="menu-link">
+                                <div data-i18n="Medios de Contacto">Medios de Contacto</div>
+                            </a>
+                        </li>
+                        <li class="menu-item
+                            @if (Route::currentRouteName() == 'users.index' ||
+                                Route::currentRouteName() == 'users.create' ||
+                                Route::currentRouteName() == 'users.edit') active @endif">
+                            <a href="{{ route('users.index') }}" class="menu-link">
+                                <div data-i18n="Usuarios">Usuarios</div>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </aside>
