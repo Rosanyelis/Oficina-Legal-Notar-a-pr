@@ -26,6 +26,9 @@ class StoreClienteRequest extends FormRequest
             'lastname' => ['required'],
             'birthdate' => ['required'],
             'phone' => ['required'],
+            'medio_contactos_id' => ['required'],
+            'materia_id' => ['required'],
+            'juzgado_id' => ['required'],
         ];
     }
 
@@ -36,6 +39,9 @@ class StoreClienteRequest extends FormRequest
             'lastname.required' => "El Primer Apellido es obligatorio.",
             'birthdate.required' => "La Fecha de Nacimiento es obligatoria.",
             'phone.required' => "El Teléfono es obligatorio.",
+            'medio_contactos_id.required' => "El Medio de Contacto es obligatorio.",
+            'materia_id.required' => "La Materia es obligatoria.",
+            'juzgado_id.required' => "El Juzgado es obligatorio.",
         ];
 
     }

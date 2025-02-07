@@ -1,28 +1,18 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PosController;
 use App\Http\Controllers\RolController;
 use Illuminate\Support\Facades\Artisan;
-use App\Http\Controllers\SaleController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\StoreController;
 use App\Http\Controllers\ClientController;
-use App\Http\Controllers\KardexController;
-use App\Http\Controllers\ExpenseController;
 use App\Http\Controllers\JuzgadoController;
 use App\Http\Controllers\MateriaController;
-use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\ReportsController;
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\CustomerController;
-use App\Http\Controllers\PurchaseController;
-use App\Http\Controllers\SupplierController;
-use App\Http\Controllers\QuotationController;
 use App\Http\Controllers\WorkOrderController;
 use App\Http\Controllers\WorkSpaceController;
+use App\Http\Controllers\TaskPriorityController;
 use App\Http\Controllers\MedioContactoController;
+use App\Http\Controllers\ReportFacturableController;
 
 Route::get('/', function () {
     return redirect()->route('login');
@@ -108,6 +98,13 @@ Route::middleware('auth')->group(function () {
     Route::post('/kamban/rename-board', [WorkSpaceController::class, 'renameboard'])->name('kamban.renameboard');
     Route::post('/kamban/delete-board', [WorkSpaceController::class, 'deleteboard'])->name('kamban.deleteboard');
     Route::post('/kamban/move-item-board', [WorkSpaceController::class, 'moveitem'])->name('kamban.moveitem');
+
+    # Task por prioridad
+    Route::get('/tareas-por-prioridad', [TaskPriorityController::class, 'index'])->name('task-priority.index');
+    Route::get('/tareas-por-prioridad/json', [TaskPriorityController::class, 'json'])->name('task-priority.json');
+
+    #Report
+    Route::get('/reporte-facturable', [ReportFacturableController::class, 'index'])->name('report.index');
 });
 
 Route::get('comandos', function () {

@@ -1,0 +1,235 @@
+[
+    {
+        "id": "sin-definir",
+        "title": "Sin definir",
+        "item": [
+            {
+                "id": 1,
+                "title": "Liliana Dorado",
+                "title-secondary": "CALL CLIENTE",
+                "start-date": null,
+                "due-date": null,
+                "description": "null",
+                "priority": "Sin Definir",
+                "badge-text": "Sin Definir",
+                "badge": "info",
+                "facturable": "No",
+                "created_at": "2024-12-29T00:08:57.000000Z"
+            },
+            {
+                "id": 1,
+                "title": "Juliana Duran",
+                "title-secondary": "CALL CLIENTE",
+                "start-date": null,
+                "due-date": null,
+                "description": "null",
+                "priority": "Sin Definir",
+                "badge-text": "Sin Definir",
+                "badge": "info",
+                "facturable": "Si",
+                "created_at": "2024-12-29T00:08:57.000000Z"
+            },
+            {
+                "id": 1,
+                "title": "Liliana Dorado",
+                "title-secondary": "CALL CLIENTE",
+                "start-date": null,
+                "due-date": null,
+                "description": "null",
+                "priority": "Sin Definir",
+                "badge-text": "Sin Definir",
+                "badge": "info",
+                "facturable": "No",
+                "created_at": "2024-12-29T00:08:57.000000Z"
+            },
+            {
+                "id": 1,
+                "title": "Juliana Duran",
+                "title-secondary": "CALL CLIENTE",
+                "start-date": null,
+                "due-date": null,
+                "description": "null",
+                "priority": "Sin Definir",
+                "badge-text": "Sin Definir",
+                "badge": "info",
+                "facturable": "Si",
+                "created_at": "2024-12-29T00:08:57.000000Z"
+            },
+            {
+                "id": 1,
+                "title": "Juliana Duran",
+                "title-secondary": "CALL CLIENTE",
+                "start-date": null,
+                "due-date": null,
+                "description": "null",
+                "priority": "Sin Definir",
+                "badge-text": "Sin Definir",
+                "badge": "info",
+                "facturable": "Si",
+                "created_at": "2024-12-29T00:08:57.000000Z"
+            },
+            {
+                "id": 1,
+                "title": "Juliana Duran",
+                "title-secondary": "CALL CLIENTE",
+                "start-date": null,
+                "due-date": null,
+                "description": "null",
+                "priority": "Sin Definir",
+                "badge-text": "Sin Definir",
+                "badge": "info",
+                "facturable": "Si",
+                "created_at": "2024-12-29T00:08:57.000000Z"
+            },
+            {
+                "id": 1,
+                "title": "Juliana Duran",
+                "title-secondary": "CALL CLIENTE",
+                "start-date": null,
+                "due-date": null,
+                "description": "null",
+                "priority": "Sin Definir",
+                "badge-text": "Sin Definir",
+                "badge": "info",
+                "facturable": "Si",
+                "created_at": "2024-12-29T00:08:57.000000Z"
+            }
+        ]
+    },
+    {
+        "id": "alta",
+        "title": "Prioridad Alta",
+        "item": [
+            {
+                "id": 1,
+                "title": "Carlos Perez Gomez",
+                "title-secondary": "CALL CLIENTE",
+                "start-date": null,
+                "due-date": null,
+                "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Eleifend velit lacinia tortor vulputate curae fringilla tempus litora.",
+                "priority": "Alta",
+                "badge-text": "Alta",
+                "badge": "danger",
+                "facturable": "Si",
+                "created_at": "2024-12-28T21:48:15.000000Z"
+            },
+            {
+                "id": 2,
+                "title": "Familia Ferdinand",
+                "title-secondary": "CALL CLIENTE",
+                "start-date": null,
+                "due-date": null,
+                "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Eleifend velit lacinia tortor vulputate curae fringilla tempus litora.",
+                "priority": "Alta",
+                "badge-text": "Alta",
+                "badge": "danger",
+                "facturable": "Si",
+                "created_at": "2024-12-28T21:48:15.000000Z"
+            },
+            {
+                "id": 3,
+                "title": "Carla Quiñonez",
+                "title-secondary": "CALL CLIENTE",
+                "start-date": null,
+                "due-date": null,
+                "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Eleifend velit lacinia tortor vulputate curae fringilla tempus litora.",
+                "priority": "Alta",
+                "badge-text": "Alta",
+                "badge": "danger",
+                "facturable": "Si",
+                "created_at": "2024-12-28T21:48:15.000000Z"
+            }
+        ]
+    },
+    {
+        "id": "media",
+        "title": "Prioridad Media",
+        "item": [
+            {
+                "id": 1,
+                "title": "Andrés Gomez",
+                "title-secondary": "CALL CLIENTE",
+                "start-date": null,
+                "due-date": null,
+                "description": "null",
+                "priority": "Media",
+                "badge-text": "Media",
+                "badge": "warning",
+                "facturable": "Si",
+                "created_at": "2024-12-29T00:08:57.000000Z"
+            },
+            {
+                "id": 2,
+                "title": "Flor de Maria Perez",
+                "title-secondary": "CALL CLIENTE",
+                "start-date": null,
+                "due-date": null,
+                "description": null,
+                "priority": "Media",
+                "badge-text": "Media",
+                "badge": "warning",
+                "facturable": "No",
+                "created_at": "2024-12-29T00:17:53.000000Z"
+            },
+            {
+                "id": 3,
+                "title": "Ana Maria Rodríguez",
+                "title-secondary": "CALL CLIENTE",
+                "start-date": null,
+                "due-date": null,
+                "description": null,
+                "priority": "Media",
+                "badge-text": "Media",
+                "badge": "warning",
+                "facturable": "Si",
+                "created_at": "2024-12-29T00:17:53.000000Z"
+            }
+        ]
+    },
+    {
+        "id": "baja",
+        "title": "Prioridad Baja",
+        "item": [
+            {
+                "id": 1,
+                "title": "Andrés Gomez",
+                "title-secondary": "CALL CLIENTE",
+                "start-date": null,
+                "due-date": null,
+                "description": "null",
+                "priority": "Baja",
+                "badge-text": "Baja",
+                "badge": "primary",
+                "facturable": "Si",
+                "created_at": "2024-12-29T00:08:57.000000Z"
+            },
+            {
+                "id": 2,
+                "title": "Familia Gomez",
+                "title-secondary": "CALL CLIENTE",
+                "start-date": null,
+                "due-date": null,
+                "description": "null",
+                "priority": "Baja",
+                "badge-text": "Baja",
+                "badge": "primary",
+                "facturable": "No",
+                "created_at": "2024-12-29T00:08:57.000000Z"
+            },
+            {
+                "id": 2,
+                "title": "Familia Fajardo",
+                "title-secondary": "CALL CLIENTE",
+                "start-date": null,
+                "due-date": null,
+                "description": "null",
+                "priority": "Baja",
+                "badge-text": "Baja",
+                "badge": "primary",
+                "facturable": "Si",
+                "created_at": "2024-12-29T00:08:57.000000Z"
+            }
+        ]
+    }
+
+]

@@ -55,6 +55,25 @@
                     </a>
                 </li>
 
+                <li class="menu-item
+                    @if (Route::currentRouteName() == 'task-priority.index')
+                        active
+                    @endif">
+                    <a href="{{ route('task-priority.index') }}" class="menu-link">
+                        <i class="menu-icon tf-icons ri-kanban-view"></i>
+                        <div data-i18n="Tareas por prioridad">Tareas por prioridad</div>
+                    </a>
+                </li>
+
+                <li class="menu-item
+                    @if (Route::currentRouteName() == 'report.index')
+                        active
+                    @endif">
+                    <a href="{{ route('report.index') }}" class="menu-link">
+                        <i class="menu-icon tf-icons ri-kanban-view"></i>
+                        <div data-i18n="Tareas por prioridad">Reporte de Facturacion</div>
+                    </a>
+                </li>
 
                 <li class="menu-header mt-5">
                     <span class="menu-header-text" data-i18n="Configuraciones">Configuraciones</span>
